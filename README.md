@@ -6,3 +6,4 @@
 4、var a="你的年龄是"+10+20, 输出的结果为“你的年龄是1020”. 因为优先计算“你的年龄是”+10变成了字符串<br>
 5、var a=“3”>"22"  输出true，当两个字符串相比较时，则比较第一位数的大小<br>
 6、javascript基本数据类型：undefined、null、boolean、number、string和Object<br>
+  hello world
