@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+		<script type="text/javascript">
+			/*
+			function box(num1,num2){
+				return num1+num2;
+			}
+			
+
+			function sum(num1,num2){
+				return box.apply(this,arguments);         //ps当数组较多时可以用 arguments 代替，apply()和call（）可以冒充另一个函数
+			}
+
+			alert(sum(23,13));
+			*/
+		
+			//上面是apply冒充函数
+			
+
+
+			function box(num1,num2){
+				return num1+num2;
+			}
+			function sum(num1,num2){
+				return box.call(this,num1,num2)          //这是call（）冒充函数的方法
+			}
+			alert(sum(12,21));
+		</script>
+</body>
+</html>

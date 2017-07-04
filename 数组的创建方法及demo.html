@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+	<script type="text/javascript">
+		/*
+		var box=new Array(10); //分配10个数组空间
+		box[1]="jack";		//给第2个数组赋值
+		alert(box[1]);
+		*/
+	//创建数组的第二种方式
+		// var box=["jack",28,177]        //字面量的方式创建数组并分配元素
+	//创建数组第三中方式
+	
+		/*
+		var box=[];
+		box["name"]="lee";
+		alert(box["name"]); 						//数组可以这样赋值
+		*/
+		
+ 		/*
+		var box=["jack",28,"suzhou"];         
+		box[box.length]="jiangsu"            //在数组的最后添加数组
+		alert(box); 
+		*/
+		
+		/*
+		var box=[
+			['jack',28],
+
+			'mark',
+			25+25,
+			{
+				name:'xa',
+				age:28
+			},
+			new Array(1,'pop')
+		];	
+		alert(box[3].name);          //一个复杂的数组，输出其里面的值 
+		*/
+			
+
+		/*
+		var box=["jack",28,"city","address"];
+		alert(box.join("|"));        //该函数可以改变数组里面默认的分隔符号，
+		*/
+		
+
+
+		/*
+		var box=["jack",28,"city","address"];
+		alert(box); 
+		box.push("计算机");         //往数组后面插入元素
+		alert(box);
+		box.pop();				//删除数组最后的元素
+		alert(box);
+		box.shift();           //删除数组最前面的元素
+		alert(box);
+		box.unshift("sp");    //往数组最前面插入元素
+		alert(box);
+		*/
+		
+
+		/*
+		var box=["jack",28,"city","address"];
+		alert(box.reverse());     //将数组里面元素顺序倒过来
+		*/
+	
+		var box=[5,6,16,7,3,9,5];
+		alert(box.sort());      //从小到大排序，不过一旦有两位数就会出现bug
+	</script>
+</html>

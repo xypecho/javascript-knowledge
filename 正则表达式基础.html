@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*
+		var box=new RegExp("Box","igm");          //创建正则表达式的第一种方式
+		alert(box);
+
+
+		var box=/Box/;         //创建正则表达式的第二种方式
+		alert(box);   
+
+
+		var pattern=new RegExp("Box","i");        //i为忽略大小写的意思
+		var str="box";
+		alert(pattern.test(str));    //test方法返回true和false
+
+		alert(/box/i.test("Box")); //另一种写法
+		*/
+		var pattern=/box/i;
+		var str="this is a Box";
+		alert(pattern.exec(str));      //exec()方法返回的是符合匹配要求的数组，没有匹配的则返回null
+	</script>
+</body>
+</html>

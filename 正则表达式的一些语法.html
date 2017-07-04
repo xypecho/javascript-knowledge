@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+	/*
+	var pattern=/^[a-z]+\s[0-9]{4}$/;      //用来匹配如下字符
+	var box="google 2012"
+	alert(pattern.exec(box));
+
+
+	var pattern=/(\d+)([a-z])/ig;    // 加括号表示捕获性分组，所有的分组都捕捉返回
+	var box="123abc";
+	alert(pattern.exec(box));
+
+
+	var pattern=/(\d+)(?:[a-z])/ig;    // 加 ？： 表示非捕获性分组
+	var box="123abc";
+	alert(pattern.exec(box));
+
+
+	var pattern=/goo(?=gle)/;     // 前瞻性捕获 (?=gle)表示 前面字符后面紧跟 gle 才能返回goo
+	var box="google";
+	alert(pattern.exec(box));
+
+
+	var pattern=/\[/;             //想匹配特殊字符需要加 转义符  \
+	var box="["
+	alert(pattern.test(box));
+	*/
+	
+	var pattern=/^\d+/gm;       //  ^\d 表示从头开始，匹配全局的数字
+	var box="1.baidu\n2.google\n3.bing"
+	alert(box.replace(pattern,"#"));
+	</script>
+</body>
+</html>

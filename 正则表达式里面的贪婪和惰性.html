@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+	/*
+	var pattern=/[a-z]/;
+	var box="abcdefg";
+	alert(box.replace(pattern,("1")));     
+	*/
+
+	var pattern=/[a-z]+?/;
+	var box="abcdefg";
+	alert(box.replace(pattern,("1")));     //这里使用的贪婪，加上 + 号都则所有匹配到的字符都被替换了,加上 ？ 则关闭了贪婪
+	</script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+	/*
+	var box=/go.gle/ig;          // .点可以匹配任意字符
+	var str="go3gle";
+	alert(box.test(str));
+
+
+
+	var box=/go*gle/ig;          // *为匹配0个，1个或者多个前面的字符，该代码中是指匹配多个“o”
+	var str="goooogle";
+	alert(box.test(str));
+
+
+	var box=/go+gle/ig;          // +为匹配1个或者多个前面的字符，该代码中是指匹配多个“o”，注意如果为0将匹配错误
+	var str="goooogle";
+	alert(box.test(str));
+
+
+	var box=/go?gle/ig;          // ?为匹配0个或者1个前面的字符，该代码中是指匹配多个“o”，注意如果大于1个将匹配错误
+	var str="google";
+	alert(box.test(str));
+
+
+	var box=/g.?gle/ig;          // 该正则表达式意思为  匹配任意一个或者0个字符
+	var str="gqgle";
+	alert(box.test(str));
+
+
+	var box=/go{2,5}gle/ig;          // {2,5}表示匹配最少2个最多5个前面的字符 ps{3}表示只能是3个前面的字符，多了少了就报错，
+	var str="goooooogle";			//接上面，｛3，｝逗号后面不加任何数字表示3个或者以上的前面的字符
+	alert(box.test(str));
+
+
+	var box=/[a-z]oogle/g;           //[a-z]表示匹配所有小写的字母
+	var str="google";			
+	alert(box.test(str));
+
+
+	var box=/[A-Z]oogle/g;           //[A-Z]表示匹配所有大写的字母
+	var str="google";			
+	alert(box.test(str));
+
+
+	var box=/[0-9]oogle/g;           //[0-9]表示匹配所有数字
+	var str="4oogle";			
+	alert(box.test(str));
+
+
+	var box=/[a-zA-Z0-9]oogle/;           //[a-zA-Z0-9]表示匹配所有字母和数字
+	var str="google";			
+	alert(box.test(str));
+
+
+	var box=/[^0-9]oogle/;           //[^0-9]相当于取反，即匹配除了数字的其他任意字符
+	var str="5oogle";			
+	alert(box.test(str));
+
+
+	var box=/^[a-z]oogle/;           //^[a-z]表示从头开始匹配
+	var str="ggoogle";			
+	alert(box.test(str));
+
+
+	var box=/\woogle/;           //  \w和[a-zA-Z0-9_]效果是一样的，表示匹配字母和数字包括下划线
+	var str="4oogle";			
+	alert(box.test(str));
+
+
+	var box=/\Woogle/;           //  \W大小的w，表示匹配所有的非 字母数字和下划线 的其他字符
+	var str="。oogle";			
+	alert(box.test(str));
+
+
+	var box=/\doogle/;           // \d和【0-9】效果是一样的
+	var str="0oogle";			
+	alert(box.test(str));
+
+
+	var box=/\Doogle/;           // \D和【^0-9】效果是一样的,表示匹配所有非数字字符
+	var str="0oogle";			
+	alert(box.test(str));
+	
+
+	var box=/^google$/;           // /^google$/  这个写法表示从头到尾都要是google 即强制首尾都匹配google
+	var str="google";			
+	alert(box.test(str));
+
+
+	var box=/^goo\sgle$/;           // \s表示匹配空格
+	var str="goo gle";			
+	alert(box.test(str));
+
+
+	var box=/^goo\Sgle$/;           // \S，大写的s表示匹配所有非空格字符
+	var str="goo gle";			
+	alert(box.test(str));
+	
+
+
+	var box=/google\b/;           // \b，表示前面的字符是否是匹配字符里面最后一个字符
+	var str="google44";			
+	alert(box.test(str));
+
+
+	var box=/^google$|^soso$|^microsoft$/;           //  这个“|”符号代表或,这段正则表示只能匹配上面3个之一
+	var str="soso";			
+	alert(box.test(str));
+
+
+	var box=/(google){2,4}/;           // ()的作用是可以将（google）这个看成一个字符，这段正则表达式的意思是有2到4个google
+	var str="googlegoogle";			
+	alert(box.test(str));
+
+
+	var box=/8(.*)8/;           // 这段正则表达式的意思是匹配头尾都是8的字符
+	var str="8google8";			
+	alert(box.test(str));
+	alert(RegExp.$1);          //RegExp.$1这个函数为返回匹配到的字符
+
+
+	var box=/8(.*)8/;           
+	var str="this is a 8pop8";			
+	//document.write(str.replace(box,"<h1>tencent</h1>"))   
+	document.write(str.replace(box,"<h1>$1</h1>"))   
+	 //如果想让google跟着变，可以使用$1$1表示分组获取到的匹配的字符。注意（）括号内内容即为一个分组
+	*/
+
+	var box=/(.*)\s(.*)/;           
+	var str="baidu google";			
+	document.write(str.replace(box,"$2 $1"))   //调换位置
+	 //如果想让google跟着变，可以使用$1$1表示分组获取到的匹配的字符。注意（）括号内内容即为一个分组
+	</script>
+</body>
+</html>

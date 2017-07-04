@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*
+		function box() {                     //box()为声明的函数，需要调用才能执行
+			alert("hello world");
+		}
+		box();
+		*/
+	
+
+
+		/*
+		function box(name,age){
+			alert("我的姓名是："+name+"年龄为"+age)
+		}
+		box("jack",28);                  //传递参数的写法
+		*/
+		
+
+		/*
+		function box(){
+			return "return相当于赋值给box（）"
+		}
+		alert(box());           //相当于将return后面的字符串赋值给了  box（）     
+		*/
+	
+		function box(){
+			return arguments[0]+"|"+arguments[1]+"|"+arguments[2];
+		}
+		alert(box("jack",29,"计算机"));         //用argument返回参数
+		//javascript没有重载功能，后面的函数会覆盖之前的函数
+	</script>
+</body>
+</html>

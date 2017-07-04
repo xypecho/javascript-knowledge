@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+	/*
+	var pattern=/google/ig;
+	var str="this is google";
+	pattern.test(str);     //静态属性需要先执行一个函数才有效果
+	alert(RegExp.input);      //input属性为返回str的字符
+	alert(RegExp.leftContext);      //返回匹配到的字符前面的字符
+	alert(RegExp.rightContext);  //返回匹配到的字符后面的字符
+	alert(RegExp.lastMatch);    //返回匹配到的最后一个字符
+	*/
+
+	var pattern=/(g)oogle/ig;
+	var str="this is google ppp";
+	pattern.test(str);     //静态属性需要先执行一个函数才有效果
+	alert(RegExp.lastParen); //返回有被括号括起来的字符
+	</script>
+</body>
+</html>

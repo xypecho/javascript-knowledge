@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*
+		function box(a){
+			if (a<=1) {
+				return 1;
+			} else {
+				return a*box(a-1);       //递归就是函数自己调用自己，阶乘
+			}
+		}
+		alert(box(4));
+		*/
+	
+		function box(a){
+			if (a<=1) {
+				return 1;
+			} else {
+				return a*arguments.callee(a-1)        // arguments.callee 可以动态调用函数
+			}
+		}
+		alert(box(4));
+	</script>
+</body>
+</html>

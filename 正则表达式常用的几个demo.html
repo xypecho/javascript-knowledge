@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*
+		var pattern=/[1-9][0-9]{5}/ig;            //正则表达式匹配邮编  6位数，第一位不能为0
+		var box="018301";
+		alert(pattern.test(box));
+
+
+		var pattern=/[\w\-]\.rar|zip|7z/;           //匹配压缩包文件名   文件名为任意字符 然后是 . 最后拓展名为 rar  zip 7z等
+		var box="pic1209.3z";					//这边的正则意思是 文件名为任意字母和数字然后加上"-"，然后是 。 然后是3个之一的格式
+		alert(pattern.test(box));
+
+
+		var pattern=/\s+/g;         //删除空格
+		var box="11 22 333   444";
+		alert(box.replace(pattern,"#"));
+
+
+		var pattern=/^\s+/;       //删除了前面的所有空格
+		var box="      goo   le     ";
+		var result=box.replace(pattern,"");    
+		pattern=/\s+$/;        //删除了后面的空格
+		result=result.replace(pattern,"");   
+		alert(result);
+
+
+
+		var pattern=/^\s+(.+?)\s+$/ig;
+		var box="      go   ole    ";
+		result=pattern.exec(box)[1];
+		alert(result+"|")
+
+
+		var pattern=/^\s+(.+?)\s+$/ig;      //利用惰性模式删除空格
+		var box="      go   ole    ";
+		result=pattern.exec(box)[1];
+		alert(result+"|")
+
+
+		var pattern=/^\s+(.+?)\s+$/     //删除空格的第二种方法
+		var box="      go   ole    ";
+		result=box.replace(pattern,"$1");
+		alert(result);
+
+
+		var pattern=/^([\w\.\-]+)@(qq|163|sina)\.(com)$/;        //验证邮箱的第一种方法
+		var box="760403480@sina.com";
+		alert(pattern.test(box));
+		*/
+		var pattern=/^([\w\.\-]+)@(qq|163|sina)\.(com)$/;        //验证邮箱的第一种方法
+		var box="76040_3480@sina.com";
+		alert(pattern.test(box));
+		
+		
+	</script>
+</body>
+</html>

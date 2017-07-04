@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	//函数声明的3种方式
+	/* 
+	function box(num1,num2){              //普通函数的声明方式
+		return num1+num2;
+	}
+	alert(box(1,2));
+
+
+
+	var box=function(num1,num2){    //变量初始化函数
+		return num1+num2;
+	}
+	alert(box(1,2));
+
+
+	 var box=new Function("num1","num2","return num1+num2");       //使用new的构造函数来声明 ps此处的function f必须大写
+	 alert(box(1,2));
+	
+	*/
+
+
+
+
+	/*
+	function box(sum,num){     //此处的sum（10）是作为返回值
+		return sum+num;
+	}
+	function sum(num){
+		return num+10;
+	}
+	alert(box(sum(10),10));
+	*/
+
+	function box(sum,num){
+		return sum(num);
+	}
+	function sum(num){
+		return num+10;
+	}
+	alert(box(sum,10));           //此处的sum是函数
+</script>
+</html>
