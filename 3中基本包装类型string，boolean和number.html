@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>基本包装类型Boolean、Number和String</title>
+</head>
+<body>
+		<script type="text/javascript">
+			/*
+			alert("jack".substring(2));      //substring方法意思是索引从0开始第二个位置截取到最后
+											//基本包装类型可以使用系统内置的方法
+		
+
+
+
+
+			var box="lee";         //基本类型
+			box.name="lee";			//给基本类型加属性
+			box.age=function(){		//给基本类型加函数啊
+				return 100;
+			}
+			alert(box);
+			alert(box.substring(2));
+			alert(box.name);           //基本类型无法给自己加属性和方法，但是可以调用内置的方法
+			alert(box.age);
+			*/
+			
+
+			var box=new String("lee");         //基本类型
+			box.name="lee";			//给基本类型加属性
+			box.age=function(){		//给基本类型加函数啊
+				return 100;
+			}
+			alert(box);
+			alert(box.substring(2));
+			alert(box.name);           //基本类型无法给自己加属性和方法，但是可以调用内置的方法
+			alert(box.age);  //这样写会直接输出函数
+			alert(box.age());   //这样写才会输出函数里面的值
+		</script>
+</body>
+</html>

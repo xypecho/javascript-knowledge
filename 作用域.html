@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*
+		var a="lee";
+		function box(){
+			var a="re"         //这个地方的a为局部变量，外面访问不到
+		}
+		box();
+		alert(a);
+
+
+		var a="lee";
+		function box(){
+			a="re"         //去掉  var 则为全局变量，a被重新赋值
+		}
+		box();
+		alert(a);
+
+
+			var box='lee';
+		function setBox(box){       //把red传进去，仍然是局部变量。作用域仍然是在setbox（）里面
+			alert(box);
+		}
+		setBox("red");
+		alert(box)
+
+
+		var box='lee';
+		function setBox(){
+			function setColor(){             //作用域链
+				return 123;
+			}
+			return setColor();    //不加return，则会返回underfind
+		}
+		alert(setBox());
+		*/
+	
+		var num=0;
+		function box(){
+			num=10;
+		}
+		box();
+		alert(num);
+
+
+		//ps ｛｝ 花括号里面就有作用域，但是if 语句没有封闭作用域的功能
+	</script>
+</body>
+</html>

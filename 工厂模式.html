@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		//工厂模式
+		function creatObject(name,age){
+			var obj=new Object();      //创建对象
+			obj.name=name; //创建属性
+			obj.age=age;	
+			obj.run=function(){		//创建方法
+				return this.name+this.age+"正在运行ing";
+			}
+			return obj;     //返回对象引用
+		};
+		var box1=creatObject("jack",100);
+		var box2=creatObject("name", 666);
+		alert(box1.run());
+		alert(box2.run());
+	</script>
+</body>
+</html>

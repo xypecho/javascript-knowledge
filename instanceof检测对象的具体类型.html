@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*
+		var box=[1,2,3,4]
+		alert(typeof(box));         //检测数据基本类型
+		*/
+	
+		var box=[1,2,3,4]
+		alert(box instanceof Array);    //检测元素的具体类型
+		var box={};
+		alert(box instanceof Object);
+
+		var box=/^\w+/ig
+		alert(box instanceof RegExp);
+	</script>
+</body>
+</html>

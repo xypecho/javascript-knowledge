@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*
+		var a="lee";
+		function box(){
+			var a="re"         //这个地方的a为局部变量，外面访问不到
+		}
+		box();
+		alert(a);
+
+
+
+		var a="lee";
+		function box(){
+			a="re"         //去掉  var 则为全局变量，a被重新赋值
+		}
+		box();
+		alert(a);
+		*/
+	
+		var num=0;         //如果必须使用全局变量，则需求先在头部初始化
+		function box(){
+			num=10;
+		}
+		box();
+		alert(num);
+
+	</script>
+</body>
+</html>

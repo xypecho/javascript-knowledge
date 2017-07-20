@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+		<script type="text/javascript">
+			/*
+			var box="Mr.lee";
+			alert(box.length) //返回字符串的长度
+			alert(box.constructor);  //返回创建string的函数
+		
+			上面的是属性
+			下面的是方法
+
+			alert(box.valueOf());      //返回默认值
+
+			var box="Mr.lee is lee";
+			//alert(box.charAt(3)) //返回当前下表的数组，从0开始计数的
+			//alert(box.charCodeAt(3)) //返回的是当前数组的acssii的码
+			//alert(box[1]);  //  以数组的形式返回当前下标的元素
+			//alert(box.concat("is","a","teacher"));  //可以连接字符串
+			// alert(box.slice(2,4)) //返回第2个到第4个下标的字符串
+			// alert(box.substring(2,4)); //效果同上
+			// alert(box.substr(2,5))     //返回从第2个开始的5个字符串
+			//alert(box.slice(2,-2)) //先计算出数组长度，然后计算+（-2），就是（2，4）
+			alert(box.indexOf("l")); //查找从初始位置出现 l 的位置
+			alert(box.lastIndexOf("l")) //查找从最后开始技术第一个出现的 l 的位置
+			alert(box.IndexOf("l",5)) //从第5个位置开始查找 l 第一次出现的位置
+			alert(box.lastIndexOf("l",5)) //从第5个位置向前搜索， l 第一次出现的位置
+			*/
+			
+			/*
+			实例，找出字符串中全部 l 的位置
+			var box="Mr.lee is lee";
+			var boxarr=[];
+			var pos=box.indexOf("l") //如果找不到 l 则会返回 -1
+			while (pos>-1) {
+				boxarr.push(pos);
+				pos=box.indexOf("l",pos+1);      //找出全部 l 的位置
+			}
+			alert(boxarr);
+			*/
+		
+
+			var box="Mr.lee";
+			// alert(box.toLowerCase()); //将字符串全部转换成小写
+			// alert(box.toUpperCase()); //将字符串全部转换成大写
+			// alert(box.match("l")) //找到 l 则返回 l，么找到则返回null
+			// alert(box.search("l")); //和indeof（）效果一样
+			// alert(box.replace("l","p")) //将 l 替换成 p
+			alert(box.split("")) //以空格为间隔，将box的字符串划分为数组
+		</script>
+</body>
+</html>
