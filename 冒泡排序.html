@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+	function BubbleSort(arr){  
+    var len = arr.length;
+    count=0;
+    for (var i = 0; i < len; i++){  
+        for (var j = 0; j < len - 1 - i; j++) { 
+            if (arr[j] > arr[j+1]) {        //相邻元素两两对比  
+        		count++; 
+                var temp = arr[j+1];        //元素交换  
+                arr[j+1] = arr[j];  
+                arr[j] = temp;  
+            }  
+        } 
+    }  
+    return arr;  
+}  
+var arr=[5,1,0,9,3,10,26,8,314,1,4,2];  
+  
+alert(BubbleSort(arr));
+alert("一共循环了"+count+"次");
+	</script>
+</body>
+</html>

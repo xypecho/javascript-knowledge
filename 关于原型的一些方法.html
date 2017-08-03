@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*
+		构造函数的实例方法
+		function Box(name,age){
+			this.name=name;
+			this.age=age;
+			this.run=function(){
+				return this.name+this.age+"loading..."
+			};
+		};
+		var box=new Box("jk",100);
+		alert(box.run());
+
+
+
+		//原型函数
+		function Box(name,age){}
+		Box.prototype.name="lee";
+		Box.prototype.age=250;
+		Box.prototype.run=function(){
+			return this.name+this.age+"loading"
+		}
+		var box=new Box();
+		alert(box.run());              //实例化方法，不同的实例他们的地址是不一样的，而原型方法地址是一样的
+		alert(Box.prototype.isPrototypeOf(box));     //判断该对
+
+
+
+		function Box(name,age){
+			this.name="jack";
+		}
+		Box.prototype.name="lee";
+		Box.prototype.age=250;
+		Box.prototype.run=function(){
+			return this.name+this.age+"loading"
+		}
+		var box=new Box();							    //原型函数执行流程，选取构造函数里面找，如果有则返回没有则去原型函数里找
+		box.name="sbb";     //如果在次数赋值，则会就近原则输出sbb
+		alert(box.name);        
+		alert(box.hasOwnProperty("name"));    //判断box里面是否含有实例属性name
+		alert("name" in box);     //判断原型或者构造函数中是否含有name属性
+		 */
+		
+		function Box(name,age){
+		}
+		Box.prototype.name="lee";
+		Box.prototype.age=250;
+		Box.prototype.run=function(){
+			return this.name+this.age+"loading"
+		}
+		function isPrototype(object,name){
+		return	!object.hasOwnProperty(name) && (name in object);
+		}
+		var box=new Box();	
+		this.name="jack";						  
+		alert(isPrototype(box,"name"));     //判断是否含有原型函数name    
+		
+		
+	</script>
+</body>
+</html>
