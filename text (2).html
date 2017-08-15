@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<div id="web_bg" style="position:absolute; width:100%; height:100%; z-index:-1">
+	<img style="position:fixed;" src="a.jpg" height="100%" width="100%" />
+	<img style="position:fixed;" src="b.jpg" height="100%" width="100%" />
+	<img style="position:fixed;" src="c.jpg" height="100%" width="100%" />
+
+</div>
+</body>
+<script>
+	var x = 0;
+
+	function viewInExplorerStatus() {
+
+		$("#web_bg img").eq(x).fadeIn(1000).siblings().fadeOut(1000);
+		x = x + 1;
+		if(x > 2) {
+			x = 0
+		}
+	}
+	setInterval("viewInExplorerStatus();", 2000);
+</script>
+</html>
+
+
+
